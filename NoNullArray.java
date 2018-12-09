@@ -4,30 +4,25 @@ public class NoNullArray<T> extends ArrayList<T>{
 
   public NoNullArray(int startingCapacity){
     
-    super(StartingCapacity);
+    super(startingCapacity);
   }
 
 
   public boolean add(T val){
 
     if(val == null){
-      Throw IllegalArgumentException;
+      throw new IllegalArgumentException();
     }
-    else{
-      return super.add(val);
-    }
-
+    return super.add(val);
   }
 
 
-  public void set(T val, int index){
+  public T set(int index, T val){
     if(val == null){
-      Throw IllegalArgumentException;
+      throw new IllegalArgumentException();
     }
-    else{
-      super.set(val, index);
-    }
+    
+    return super.set(index, val);
+    
   }
-
-
 }
