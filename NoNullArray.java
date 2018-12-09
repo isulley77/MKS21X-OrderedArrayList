@@ -8,19 +8,19 @@ public class NoNullArray<T> extends ArrayList<T>{
   }
 
 
-  public void add(int val){
+  public boolean add(T val){
 
     if(val == null){
       Throw IllegalArgumentException;
     }
     else{
-      super.add(val);
+      return super.add(val);
     }
 
   }
 
 
-  public void set(int val, int index){
+  public void set(T val, int index){
     if(val == null){
       Throw IllegalArgumentException;
     }
