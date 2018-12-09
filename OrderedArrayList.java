@@ -6,4 +6,7 @@ public class OrderedArrayList<T extends Comparable<T>> extends NoNullArrayList<T
         super();
     }
     
+    public OrderedArrayList(int startingCapacity){
+        super(startingCapacity);
+    }
 }
