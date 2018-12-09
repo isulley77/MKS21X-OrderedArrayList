@@ -2,6 +2,9 @@ import java.util.ArrayList;
 
 public class NoNullArray<T> extends ArrayList<T>{
 
+    public NoNullArray(){
+        super();
+    }
     
     public NoNullArray(int startingCapacity){
     
